@@ -1,1 +1,3 @@
-<%= render "secrets/new", secret: @secret %>
+<%= turbo_frame_tag dom_id(@secret) do %>
+  <%= render "secrets/new", secret: @secret %>
+<% end %>
