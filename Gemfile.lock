@@ -194,6 +194,9 @@ GEM
     public_suffix (5.0.4)
     puma (6.4.0)
       nio4r (~> 2.0)
+    puma-daemon (0.3.2)
+      puma (>= 5.0)
+      rack
     racc (1.7.3)
     rack (3.0.8)
     rack-session (2.0.0)
@@ -316,6 +319,7 @@ DEPENDENCIES
   jbuilder
   mysql2 (~> 0.5)
   puma (>= 5.0)
+  puma-daemon
   rails (~> 7.1.2)
   redis (>= 4.0.1)
   selenium-webdriver
