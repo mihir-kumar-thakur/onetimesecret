@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>One Time Secret Sharing | End To End Encrypted | Private and Secure</title>
+    <title>One Time Secret Sharing Link | End To End Encrypted | Private and Secure</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= render "shared/favicon_tags" %>
+    
+    <meta name="description" content="Share sensitive information like passwords, tokens, links or secret messages with self destructing end to end encrypted link">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://onetimesecret.link/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="One Time Secret Sharing Link | End To End Encrypted | Private and Secure">
+    <meta property="og:description" content="Share sensitive information like passwords, tokens, links or secret messages with self destructing end to end encrypted link">
+    <meta property="og:image" content="/og.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="onetimesecret.link">
+    <meta property="twitter:url" content="https://onetimesecret.link/">
+    <meta name="twitter:title" content="One Time Secret Sharing Link | End To End Encrypted | Private and Secure">
+    <meta name="twitter:description" content="Share sensitive information like passwords, tokens, links or secret messages with self destructing end to end encrypted link">
+    <meta name="twitter:image" content="/og.png">
+
+    <meta property=”og:image:width” content=”1200″/>
+
+    <meta property=”og:image:height” content=”630″/>
+        
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light py-2 bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light py-2 bg-light shadow">
       <div class="container-fluid">
         <a class="navbar-brand mx-auto" href="/">
           <%= image_tag("onetimesecret.png", size: "240x48") %>
